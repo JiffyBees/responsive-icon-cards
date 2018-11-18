@@ -10,8 +10,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  margin: .75rem;
   font-family: sans-serif;
+  padding: .75rem;
+  line-height: 1.2;
 }
 
 *, *::before, *::after {
@@ -20,25 +21,58 @@ html {
 
 body {
   display: block;
+  margin: 0;
   font-size: 1.3rem;
 }
 
-.card-body {
-  padding: 0;
-list-style-type: none;
+.card-body h2 {
+  margin: 0;
+  padding-top: 1rem;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
 }
 
 .card-img {
-  width: 5rem;
-  max-width: 100%;
-  padding-right: 25px;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 25em) {
 
+  img {
+    display: inline-block;
+  }
+
+  .cards {
+    position: absolute;
+    left: 8rem;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
+html {
+  display: inline-block;
+}
 
 }
 
